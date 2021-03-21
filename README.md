@@ -14,21 +14,21 @@ dimension tables (users, songs, artists, time).
 #### Fact Table
 1. **songplays**-records in log data asscociated with songs plays
 - _songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent_
-![alt text](https://github.com/BingChen-0512/data_modeling_postgres/blob/master/songplays.png?raw=true)
+![alt text](https://github.com/BingChen-0512/aws_redshift/blob/master/songplays.png?raw=true)
 
 #### Dimension Tables
 2. **users**-users in the app
 - _user_id, first_name, last_name, gender, level_
-![alt text](https://github.com/BingChen-0512/data_modeling_postgres/blob/master/songplays.png?raw=true)
+![alt text](https://github.com/BingChen-0512/aws_redshift/blob/master/users.png?raw=true)
 3. **songs**-songs in music database
 - _song_id, title, artist_id, year, duration_
-![alt text](https://github.com/BingChen-0512/data_modeling_postgres/blob/master/songplays.png?raw=true)
+![alt text](https://github.com/BingChen-0512/aws_redshift/blob/master/songs.png?raw=true)
 4. **artists**-artists in music database
 - _artist_id, name, location, latitude, longitude_
-![alt text](https://github.com/BingChen-0512/data_modeling_postgres/blob/master/songplays.png?raw=true)
+![alt text](https://github.com/BingChen-0512/aws_redshift/blob/master/artists.png?raw=true)
 5. **time**-timestamps of records in **songplays** broken down into specific units
 - _start_time, hour, day, week, month, year, weekday_
-![alt text](https://github.com/BingChen-0512/data_modeling_postgres/blob/master/songplays.png?raw=true)
+![alt text](https://github.com/BingChen-0512/aws_redshift/blob/master/time.png?raw=true)
 
 Only primary keys and foreign keys in the tables have NOT NULL constraint. 
 The distrubution strategy is AUTO.
